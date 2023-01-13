@@ -1,0 +1,129 @@
+:root {
+  font-family: Mona Sans, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: grey;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  box-sizing: content-box;
+}
+
+@font-face {
+  font-family: 'Mona Sans';
+  src:
+    url('./MonaSans.woff2') format('woff2 supports variations'),
+    url('./MonaSans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.line {
+  display: inline-flex!important;
+}
+
+.word {
+  background-color: grey;
+  padding-right: 1vw;
+}
+
+.item {
+  position: relative;
+  width: 450px;
+  height: 570px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.item_title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  color: #e0faab;
+  font-size: 4vw;
+  width: 90%;
+  font-weight: bolder;
+  font-stretch: expanded;
+}
+
+.line_inner .word {
+  background: red;
+  padding-right: 1vw;
+}
+
+h2  {
+  font-kerning: none;
+}
+
+.item_image {
+  width: 100%;
+  height: 100%;
+}
+
+.word {
+  position: relative;
+}
+
+.item_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.iT .word:last-child {
+  border-top-right-radius: 10px;
+}
+
+.iB .word:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+.eT .word:last-child:before {
+  content: "";
+  position: absolute;
+  background: grey;
+  height: 10px;
+  width: 10px;
+  left: 100%;
+  top: 0;
+  -webkit-mask: radial-gradient(farthest-side at bottom right,transparent 100%,grey 100%);
+  mask: radial-gradient(farthest-side at bottom right,transparent 100%,grey 100%);
+}
+
+.eB .word:last-child:after {
+  content: "";
+  position: absolute;
+  background: grey;
+  height: 10px;
+  width: 10px;
+  left: 100%;
+  bottom: 0;
+  -webkit-mask: radial-gradient(farthest-side at top right,transparent 100%,grey 100%);
+  mask: radial-gradient(farthest-side at top right,transparent 100%,grey 100%);
+}
