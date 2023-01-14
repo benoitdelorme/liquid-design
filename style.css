@@ -4,7 +4,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: grey;
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -47,16 +47,16 @@ body {
 }
 
 .word {
-  background-color: grey;
+  background-color: white;
   padding-right: 1vw;
 }
 
 .item {
   position: relative;
-  width: 450px;
+  width: 650px;
   height: 570px;
-  margin-top: 100px;
-  margin-left: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .item_title {
@@ -64,16 +64,11 @@ body {
   top: 0;
   left: 0;
   margin: 0;
-  color: #e0faab;
-  font-size: 4vw;
-  width: 90%;
+  color: black;
+  font-size: 6vw;
+  width: 80%;
   font-weight: bolder;
   font-stretch: expanded;
-}
-
-.line_inner .word {
-  background: red;
-  padding-right: 1vw;
 }
 
 h2  {
@@ -97,33 +92,49 @@ h2  {
 }
 
 .iT .word:last-child {
-  border-top-right-radius: 10px;
+  border-top-right-radius: 15px;
 }
 
 .iB .word:last-child {
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 15px;
 }
 
 .eT .word:last-child:before {
   content: "";
   position: absolute;
-  background: grey;
-  height: 10px;
-  width: 10px;
+  background: white;
+  height: 15px;
+  width: 15px;
   left: 100%;
   top: 0;
-  -webkit-mask: radial-gradient(farthest-side at bottom right,transparent 100%,grey 100%);
-  mask: radial-gradient(farthest-side at bottom right,transparent 100%,grey 100%);
+  -webkit-mask: radial-gradient(farthest-side at bottom right,transparent 100%,white 100%);
+  mask: radial-gradient(farthest-side at bottom right,transparent 100%,white 100%);
 }
 
 .eB .word:last-child:after {
   content: "";
   position: absolute;
-  background: grey;
-  height: 10px;
-  width: 10px;
+  background: white;
+  height: 15px;
+  width: 15px;
   left: 100%;
   bottom: 0;
-  -webkit-mask: radial-gradient(farthest-side at top right,transparent 100%,grey 100%);
-  mask: radial-gradient(farthest-side at top right,transparent 100%,grey 100%);
+  -webkit-mask: radial-gradient(farthest-side at top right,transparent 100%,white 100%);
+  mask: radial-gradient(farthest-side at top right,transparent 100%,white 100%);
+}
+
+.line:last-child:after {
+  content: "";
+  position: absolute;
+  background: white;
+  height: 15px;
+  width: 15px;
+  left: 0;
+  top: 100%;
+  -webkit-mask: radial-gradient(farthest-side at bottom right,transparent 100%,white 100%);
+  mask: radial-gradient(farthest-side at bottom right,transparent 100%,white 100%);
+}
+
+.line .word:last-child {
+  padding-right: 1.5vw;
 }
