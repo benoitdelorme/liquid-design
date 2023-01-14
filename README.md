@@ -2,10 +2,6 @@
 Inspiration: [Siizdesign](https://www.instagram.com/p/CnL-t5nPVN1/)
 ![Siizdesign](./visual.png)
 
-Demo
-
-
-
 ## Setup
 Run this followed commands:
 
